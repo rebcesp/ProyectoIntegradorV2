@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rebcesp.proyectointegradorv2.SignUp">
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPhone"
+            android:hint="Numero Movil"
+            android:text="637821410"
+            android:textSize="34sp"
+            android:inputType="phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:hint="Introduce tu Nombre"
+            android:text="Guillermo"
+            android:textSize="34sp"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:hint="Introduce tu contraseña"
+            android:text="1234"
+            android:textSize="34sp"
+            android:inputType="textPassword"/>
+
+        <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+        <!--android:id="@+id/edtPhone"-->
+        <!--android:hint="Numero Telefono"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColorHint="android:color/white"-->
+        <!--android:text="637821491"-->
+        <!--android:textColor="android:color/white"-->
+        <!--android:textSize="34sp"-->
+        <!--android:inputType="phone"-->
+        <!--app:met_baseColor="@android:color/white"-->
+        <!--app:met_floatingLabel="highlight"-->
+        <!--app:met_maxCharacters="11"-->
+        <!--app:met_primaryColor="@android:color/white"-->
+        <!--app:met_singleLineEllipsis="true"/>-->
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Up"
+        android:id="@+id/btnSignUp"/>
+
+</RelativeLayout>

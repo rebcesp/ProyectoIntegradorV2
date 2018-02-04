@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.rebcesp.proyectointegradorv2.Main2Activity">
+
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="2"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+
+        <!--&lt;!&ndash;<info.hoang8f.widget.FButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/SignUp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Sign Up"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:buttonColor="@color/btnSignUp"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:cornerRadius="4dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowColor="@android:color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowEnabled="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowHeight="5dp" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<info.hoang8f.widget.FButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Sign In"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/SignIn"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_margin="8dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:buttonColor="@color/btnSignActive"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowColor="@android:color/black"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowEnabled="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:shadowHeight="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:cornerRadius="4dp"/>&ndash;&gt;-->
+
+
+
+
+
+    <!--</LinearLayout>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:weightSum="2">
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:fontFamily="@font/nabila"
+        android:gravity="center"
+        android:text="@string/TxtPresentation"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSignUp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Sign In" />
+
+</RelativeLayout>

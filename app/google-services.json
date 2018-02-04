@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1064218078895",
+    "firebase_url": "https://proyectointegradorv2.firebaseio.com",
+    "project_id": "proyectointegradorv2",
+    "storage_bucket": "proyectointegradorv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064218078895:android:fac278c48da06995",
+        "android_client_info": {
+          "package_name": "com.example.rebcesp.proyectointegradorv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064218078895-3d8dj9dgd756e8k85fn9hkgvg11a1qa2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rebcesp.proyectointegradorv2",
+            "certificate_hash": "8fd386fef145cdefd8e9b8c617f72cc1c823cfd3"
+          }
+        },
+        {
+          "client_id": "1064218078895-e8vdpjienmi07o693ai2o9180a5barlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7zDS8BcK9SAIXsRGTy8XjsAlGVkP9j3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064218078895-e8vdpjienmi07o693ai2o9180a5barlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

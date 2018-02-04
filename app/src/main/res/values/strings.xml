@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProyectoIntegradorV2</string>
+    <string name="slogan">Hakana</string>
+    <string name="TxtPresentation">Hanaka es una app comunitaria que puedes encontrar todo lo que necesitas a tu alcanze, no dudes en buscar...</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
