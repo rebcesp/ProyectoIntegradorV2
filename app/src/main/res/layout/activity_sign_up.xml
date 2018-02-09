@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
     tools:context="com.example.rebcesp.proyectointegradorv2.SignUp">
 
     <LinearLayout
@@ -14,33 +15,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <ImageView
+            android:layout_width="276dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:padding="16dp"
+            android:src="@drawable/logowifi" />
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/edtPhone"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
             android:hint="Numero Movil"
-            android:text="637821410"
-            android:textSize="34sp"
-            android:inputType="phone"/>
+            android:inputType="phone"
+            android:padding="8dp"
+            android:selectAllOnFocus="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/edtName"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
             android:hint="Introduce tu Nombre"
-            android:text="Guillermo"
-            android:textSize="34sp"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:selectAllOnFocus="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/edtPassword"
-            android:hint="Introduce tu contraseña"
-            android:text="1234"
-            android:textSize="34sp"
-            android:inputType="textPassword"/>
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:hint=" Introduce tu contraseña"
+            android:inputType="textPassword"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <!--<com.rengwuxian.materialedittext.MaterialEditText-->
         <!--android:id="@+id/edtPhone"-->
@@ -63,12 +80,15 @@
 
     </LinearLayout>
     <Button
+
+        android:background="@color/overlayBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_alignParentBottom="true"
+        android:fontFamily="@font/audiowide"
         android:text="Sign Up"
         android:id="@+id/btnSignUp"/>
 

@@ -1,6 +1,7 @@
 package com.example.rebcesp.proyectointegradorv2;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,8 +30,6 @@ public class SignUp extends AppCompatActivity {
         edtPhone=(EditText)findViewById(R.id.edtPhone);
         edtName=(EditText)findViewById(R.id.edtName);
         edtPassword=(EditText)findViewById(R.id.edtPassword);
-
-
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
 
         //Iniciamos el firebase Database
@@ -64,6 +63,10 @@ public class SignUp extends AppCompatActivity {
                              User user = new User(edtName.getText().toString(), edtPassword.getText().toString());
                              table_user.child(edtPhone.getText().toString()).setValue(user);
                              Toast.makeText(SignUp.this, "Registro Correctamente", Toast.LENGTH_SHORT).show();
+                             Intent i = new Intent(SignUp.this,SignIn.class);
+                             i.putExtra("telefono",edtPhone.getText().toString());
+                             i.putExtra("password",edtPassword.getText().toString());
+                             startActivity(i);
                              finish();
 
                          }
