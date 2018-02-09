@@ -6,6 +6,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="btn_olvide_contraseña">Cambiar Contraseña</string>
+    <string name="btn_back">Ir atras</string>
     <string name="action_settings">Settings</string>
 </resources>

@@ -19,7 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 public class SignUp extends AppCompatActivity {
 
     EditText edtPhone,edtName,edtPassword;
-    Button btnSignUp;
+    Button btnSignUp,btnResetPassword;
+
 
 
     @Override
@@ -32,10 +33,25 @@ public class SignUp extends AppCompatActivity {
         edtPassword=(EditText)findViewById(R.id.edtPassword);
         btnSignUp=(Button)findViewById(R.id.btnSignUp);
 
+//        //Recuperar contraseña
+//        btnResetPassword=(Button)findViewById(R.id.btn_reset_password);
+
+
         //Iniciamos el firebase Database
 
          final FirebaseDatabase database= FirebaseDatabase.getInstance();
          final DatabaseReference table_user = database.getReference("User");
+
+//         btnResetPassword.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 Intent i = new Intent(SignUp.this,RecuperarPassword.class);
+//                 startActivity(i);
+//                 finish();
+//             }
+//         });
+
+
 
          btnSignUp.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -52,26 +68,30 @@ public class SignUp extends AppCompatActivity {
                          if (dataSnapshot.child(edtPhone.getText().toString()).exists()) {
 
 
-                         mDialog.dismiss();
-                         Toast.makeText(SignUp.this, "Numero de telefono Verificado", Toast.LENGTH_SHORT).show();
+                             mDialog.dismiss();
+                             Toast.makeText(SignUp.this, "Numero de telefono Verificado", Toast.LENGTH_SHORT).show();
 
-                     }
-                     else
+                         } else
 
                          {
                              mDialog.dismiss();
                              User user = new User(edtName.getText().toString(), edtPassword.getText().toString());
                              table_user.child(edtPhone.getText().toString()).setValue(user);
-                             Toast.makeText(SignUp.this, "Registro Correctamente", Toast.LENGTH_SHORT).show();
-                             Intent i = new Intent(SignUp.this,SignIn.class);
-                             i.putExtra("telefono",edtPhone.getText().toString());
-                             i.putExtra("password",edtPassword.getText().toString());
-                             startActivity(i);
-                             finish();
+                             if (edtPassword.getText().toString().equals("")) {
+                                 Toast.makeText(SignUp.this,"Introduce una contraseña",Toast.LENGTH_SHORT).show();
 
+                             } else {
+
+                                 Toast.makeText(SignUp.this, "Registro Correctamente", Toast.LENGTH_SHORT).show();
+                                 Intent i = new Intent(SignUp.this, SignIn.class);
+                                 i.putExtra("telefono", edtPhone.getText().toString());
+                                 i.putExtra("password", edtPassword.getText().toString());
+                                 startActivity(i);
+                                 finish();
+
+                             }
                          }
                      }
-
 
                      @Override
                      public void onCancelled(DatabaseError databaseError) {

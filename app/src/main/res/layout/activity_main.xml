@@ -32,6 +32,11 @@
             android:textColor="@android:color/white"
             android:textSize="35sp" />
 
+        <!--<pl.droidsonroids.gif.GifTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/logogiffinal"/>-->
+
     </LinearLayout>
 
     

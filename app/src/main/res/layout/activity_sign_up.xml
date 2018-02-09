@@ -79,6 +79,19 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignUp"
+        android:layout_margin="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/overlayBackground"
+        android:fontFamily="@font/audiowide"
+
+        android:text="He olvidado la contraseña" />
     <Button
 
         android:background="@color/overlayBackground"
