@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
     tools:context="com.example.rebcesp.proyectointegradorv2.SignIn">
 
     <LinearLayout
@@ -15,22 +16,26 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:id="@+id/edtPhone"
             android:hint="Numero Movil"
-            android:text="637821491"
-            android:textSize="34sp"
+            android:textSize="20sp"
+
+
             android:inputType="phone"/>
 
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/edtPassword"
             android:hint="Introduce tu contraseña"
-            android:text="1234"
-            android:textSize="34sp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+         android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
             android:inputType="textPassword"/>
 
         <!--<com.rengwuxian.materialedittext.MaterialEditText-->
@@ -54,13 +59,15 @@
 
     </LinearLayout>
     <Button
+        android:background="@color/overlayBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:layout_alignParentBottom="true"
-        android:text="Sign In"
+        android:text="Continuar"
+        android:fontFamily="@font/audiowide"
         android:id="@+id/btnSignIn"/>
 
 </RelativeLayout>
