@@ -36,7 +36,7 @@ public class SignIn extends AppCompatActivity {
         edtPassword.setText(getIntent().getStringExtra("password"));
 
 
-        //Iniciamos el firebase Database
+        //Iniciamos el firebase Databasee
 
         FirebaseDatabase database= FirebaseDatabase.getInstance();
         final DatabaseReference table_user = database.getReference("User");
