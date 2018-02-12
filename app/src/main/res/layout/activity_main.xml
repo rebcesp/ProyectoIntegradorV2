@@ -26,11 +26,11 @@
             android:id="@+id/txtSlogan"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/audiowide"
+            android:fontFamily="@font/gentleman"
             android:gravity="center"
             android:text="@string/slogan"
             android:textColor="@android:color/white"
-            android:textSize="35sp" />
+            android:textSize="70sp" />
 
         <!--<pl.droidsonroids.gif.GifTextView-->
             <!--android:layout_width="match_parent"-->
